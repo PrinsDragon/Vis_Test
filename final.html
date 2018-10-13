@@ -112,7 +112,7 @@
     function timer() {
         var second_end = (new Date()).getTime();
         var diff = second_end - second_start;
-        var show_num = (Math.trunc(diff) / 1000).toFixed(1);
+        var show_num = (diff / 1000).toFixed(1);
         second_buff = show_num;
         try {
             document.getElementById("timer").value = String(show_num) + "s";

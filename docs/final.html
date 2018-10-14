@@ -72,7 +72,7 @@
     }
 </style>
 <body>
-<p id="index"></p>
+<p id="index">点击next开始</p>
 <p>
     <input type="text" id="timer" value="0.0s" readonly title="timer">
 </p>
@@ -88,10 +88,11 @@
     var answer_sheet = [];
 
     var pic_name = ["pie", "bar", "clock", "race"];
-    var instruction = ["深蓝占整个的百分比",
-                      "黑条占总共的百分比",
-                      "红指针的角速度是黑指针的百分之多少？",
-                      "黑条的线速度是灰条的百分之多少？"];
+    var instruction = ["深蓝占整个的百分比。",
+                      "黑条占总共的百分比。",
+                      "红指针的角速度是黑指针的百分之多少？请通过黑指针转完一周时红指针的角度来判断。",
+                      "黑条的线速度是灰条的百分之多少？请通过每一个瞬间黑条和灰条的长度来判断。"];
+    var last = "非常感谢您的配合与支持，最后麻烦将上述结果复制粘贴发送到邮箱：wang_zilong@pku.edu.cn";
 
     var data = [3., 30., 76., 97.];
     var type = [ 0,  1,  2,  3,
@@ -163,6 +164,10 @@
             for (var i=0; i<16; i++) {
                 d3.select("body").select("#area").append("p").text(answer_sheet[i]);
             }
+
+            d3.select("body").select("#area").append("br");
+            d3.select("body").select("#area").append("br");
+            d3.select("body").select("#area").append("p").text(last);
 
             return;
         }

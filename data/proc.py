@@ -1,7 +1,7 @@
 import numpy as np
 import scipy.io as io
 
-name = ["cy", "db", "fty", "mm", "xy"]
+name = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 pic_dict = {"bar": 0, "clock": 1, "pie": 2, "race": 3}
 pic_dict_rev = {0: "bar", 1: "clock", 2: "pie", 3: "race"}
 num_dict = {"3": 0, "30": 1, "76": 2, "97": 3}

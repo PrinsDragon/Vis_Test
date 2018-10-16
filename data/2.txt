@@ -1,0 +1,16 @@
+bar 3 5 0
+bar 30 27 0
+bar 76 78 0
+bar 97 97 0
+clock 3 5 0
+clock 30 35 0
+clock 30 25 
+clock 97 95 0
+pie 3 7 0
+pie 30 30 0
+pie 76 77 0
+pie 97 93 0
+race 3 5 0
+race 30 25 0
+race 76 75 0
+race 97 95 0
